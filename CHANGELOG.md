@@ -6,36 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
-
-- additions goes here
-
-### Updated
-
-- updates goes here
-
-### Fixed
-
-- fixes goes here
-
-### Removed
-
-- removals goes here
-
-## [MAJOR.MINOR.PATCH] - YYYY-MM-DD
+## [1.0.0] - 2022-10-21
 
 ### Added
 
-- additions goes here
+- popcorn.sif container (``md5sum: a7c6bc0f6140d7ef4705d2a53cda9e8e``)
+  create from https://github.com/brielin/Popcorn/tree/ef4455a970d4104832cca02510c555d9220b1414
 
-### Updated
-
-- updates goes here
-
-### Fixed
-
-- fixes goes here
-
-### Removed
-
-- removals goes here
