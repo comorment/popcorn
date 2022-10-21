@@ -1,36 +1,28 @@
 # popcorn project
 
-README info goes here. Modify for your own project's needs.
+Singularity wrapper for https://github.com/brielin/Popcorn (the version updated May 2022 based on Python3).
 
-# Important! - post initial setup steps
-
-After setting up project from the template, add files, commit and push the changes after running the setup script (`scripts/init.py`):
+Brief getting started instructions, which should execute built-in example provided together with popcorn software:
 
 ```
-git add <file1> <file2> ...
-git commit -a -m "initial setup"
-git push
+singularity shell --home $PWD:/home containers/popcorn.sif
+cp /tools/popcorn/test/* .
+./test.bash
 ```
 
-The remaining codes may then be added to and be modified further to suit the requirements of the `<popcorn>` project. 
+# Important! - Set up Git LFS before cloning this repository
 
-# Important! - Set up Git LFS
-
-Container files may get large and one should never add large binary files (.sif, .zip, .tar.gz, .mat, .dat, etc.) in [git](https://git-scm.com) repositories directly, mainly files that can be parsed as raw text files (code files, etc.).
-[**Git Large File Storage** (LFS)](https://git-lfs.github.com) should be used instead.
-Before adding new files to this project after initialization (running `python scripts/init.py`), go through step 1-3 on the Git LFS [homepage](https://git-lfs.github.com).
-Revise the `<popcorn>/.gitattributes` file as necessary. Some common file formats has been added already.
+Have a look [here](https://github.com/comorment/containers/blob/main/README.md#getting-started) if you're new to git or Git LFS.
 
 ## Build status
 
 [![License](http://img.shields.io/:license-GPLv3+-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
-[![Documentation Status](https://readthedocs.org/projects/container-template/badge/?version=latest)](https://container-template.readthedocs.io/en/latest/?badge=latest)
 [![Flake8 lint](https://github.com/comorment/popcorn/actions/workflows/python.yml/badge.svg)](https://github.com/comorment/popcorn/actions/workflows/python.yml)
 [![Dockerfile lint](https://github.com/comorment/popcorn/actions/workflows/docker.yml/badge.svg)](https://github.com/comorment/popcorn/actions/workflows/docker.yml)
 
 ## Description of available containers
 
-* ``popcorn`` - a hello-world introductory container setup
+* ``popcorn`` - Software for estimating correlation of trait effect sizes across populations
 
 ## Software versions
 
@@ -41,27 +33,11 @@ Please keep up to date (and update the main `<popcorn>/README.md` when pushing n
   | ----------------------- | ------------------- | ----------------------------------------
   | popcorn.sif  | ubuntu              | 20.04
   | popcorn.sif  | python3             | python 3.10.6
+  | popcorn.sif  | popcorn             | https://github.com/brielin/Popcorn ef4455a
 
 ## Building/rebuilding containers
 
 For instructions on how to build or rebuild containers using [Docker](https://www.docker.com) and [Singularity](https://docs.sylabs.io) refer to [`<popcorn>/src/README.md`](https://github.com/comorment/popcorn/blob/main/src/README.md).
-
-## Build the documentation
-
-Within this repository, the html-documentation can be built from source files put here using [Sphinx](https://www.sphinx-doc.org/en/master/index.html). 
-To do so, install Sphinx and some additional packages in python using [Conda](https://docs.conda.io/en/latest/) by issuing:
-
-```
-cd <popcorn>/docs/source
-conda env create -f environment.yml  # creates environment "sphinx"
-conda activate sphinx  # activates environment "sphinx
-make html  # builds html documentation into _build/html/ subdirectory
-```
-
-The built documentation can be viewed locally in a web browser by opening the file 
-`<popcorn>/docs/source/_build/html/index.html`
-
-The documentation may also be hosted online on [readthedocs.org](https://readthedocs.org).
 
 ## Feedback
 
