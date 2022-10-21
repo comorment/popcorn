@@ -1,0 +1,2 @@
+EUR_EAS_all_gen_eff.cscore.gz filter=lfs diff=lfs merge=lfs -text
+EUR_EAS_all_gen_imp.cscore.gz filter=lfs diff=lfs merge=lfs -text

@@ -10,6 +10,9 @@ cp /tools/popcorn/test/* .
 ./test.bash
 ```
 
+For EUR and EAS populations the reference files are included in ``reference`` folder.
+Note that you may directly use compressed ``.gz`` files as an argument of the ``--cfile`` option in popcorn - no need to extract them
+
 # Important! - Set up Git LFS before cloning this repository
 
 Have a look [here](https://github.com/comorment/containers/blob/main/README.md#getting-started) if you're new to git or Git LFS.
