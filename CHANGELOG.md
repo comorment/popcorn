@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- ``1000GP_Phase3.sample`` file from [here](https://mathgen.stats.ox.ac.uk/impute/1000GP_Phase3.html)
+
 ## [1.0.1] - 2022-10-25
 
 ### Updated
