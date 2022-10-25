@@ -42,12 +42,12 @@ RUN yes | pip install bed-reader==0.2.24
 #bed-reader>=0.2.5
 #more-itertools>=8.7.0
 
-RUN yes | pip install pysnptools==0.5.4 --no-dependencies
+RUN yes | pip install pysnptools==0.5.7
 
 WORKDIR /tools/popcorn
-RUN git clone https://github.com/brielin/Popcorn.git . && \
-    git reset --hard ef4455a970d4104832cca02510c555d9220b1414 && \
-    pip install . --no-dependencies
+RUN git clone https://github.com/ofrei/Popcorn.git . && \
+    git reset --hard fa1326c318859dee0f3ec884a25a2639c9311bd7 && \
+    pip install .
 
 # cleanup for smaller image size
 RUN mamba clean -a -y

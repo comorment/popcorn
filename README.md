@@ -36,7 +36,8 @@ Please keep up to date (and update the main `<popcorn>/README.md` when pushing n
   | ----------------------- | ------------------- | ----------------------------------------
   | popcorn.sif  | ubuntu              | 20.04
   | popcorn.sif  | python3             | python 3.10.6
-  | popcorn.sif  | popcorn             | https://github.com/brielin/Popcorn ef4455a
+  | popcorn.sif  | popcorn             | https://github.com/ofrei/Popcorn @ fa1326c
+  |              |                     | (minor fix on top of the original https://github.com/brielin/Popcorn @ ef4455a)
 
 ## Building/rebuilding containers
 

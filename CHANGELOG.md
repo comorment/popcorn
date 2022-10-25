@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-10-25
+
+### Updated
+
+- popcorn.sif container (``md5sum: 4a0fce687b62d06540ce2d315f413ba9``)
+  updated from https://github.com/ofrei/Popcorn/tree/fa1326c318859dee0f3ec884a25a2639c9311bd7
+- pysnptools dependency updated from 0.5.4 to 0.5.7 
+
 ## [1.0.0] - 2022-10-21
 
 ### Added
